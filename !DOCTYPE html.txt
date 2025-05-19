@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Clinic Name</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f9fafb;
+      color: #333;
+    }
+    header {
+      background-color: #0077b6;
+      padding: 1rem 2rem;
+      color: white;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f97316;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1588776814546-ec7e5f2b4a2e?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: white;
+      text-align: center;
+      padding: 5rem 1rem;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 119, 182, 0.6);
+      z-index: 0;
+    }
+    .hero h1, .hero p {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+    }
+    .section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem 1rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    h2 {
+      color: #0077b6;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .doctors, .services, .reviews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.25rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h3 {
+      color: #0077b6;
+      margin: 0.5rem 0 0.75rem 0;
+    }
+    h4 {
+      font-weight: 700;
+      color: #333;
+      text-align: center;
+      margin: 0;
+    }
+    .whatsapp-button {
+      display: block;
+      width: fit-content;
+      margin: 2rem auto;
+      background: #f97316;
+      color: white;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-decoration: none;
+      box-shadow: 0 6px 15px rgba(249, 115, 22, 0.5);
+      transition: background-color 0.3s ease;
+      text-align: center;
+    }
+    .whatsapp-button i {
+      margin-right: 0.8rem;
+    }
+    .whatsapp-button:hover {
+      background-color: #d65b00;
+    }
+    .contact p {
+      margin: 0.3rem 0;
+      font-weight: 600;
+    }
+    .contact iframe {
+      width: 100%;
+      height: 320px;
+      border-radius: 12px;
+      border: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #0077b6;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        margin: 0 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Clinic Name</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Our Clinic</h1>
+    <p>Compassionate care. Professional service.</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>We are a small, community-focused clinic offering high-quality medical care. Our experienced team is here to provide personalized attention and professional services for you and your family.</p>
+  </section>
+
+  <section id="doctors" class="section">
+    <h2>Our Doctors</h2>
+    <div class="doctors">
+      <div class="card">
+        <img src="https://via.placeholder.com/250x200" alt="Dr. Rakesh Mehta" />
+        <h3>Dr. Rakesh Mehta</h3>
+        <p>General Physician with 15 years of experience.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/250x200" alt="Dr. Nandita Sharma" />
+        <h3>Dr. Nandita Sharma</h3>
+        <p>Pediatrician with a passion for child care.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card"><h4>General Consultation</h4></div>
+      <div class="card"><h4>Pediatrics</h4></div>
+      <div class="card"><h4>Vaccinations</h4></div>
+      <div class="card"><h4>Health Checkups</h4></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Google Reviews</h2>
+    <div class="reviews">
+      <div class="card">
+        <p>“Very professional and kind doctor. Highly recommend!”</p>
+        <p><strong>– Priya S.</strong></p>
+      </div>
+      <div class="card">
+        <p>“Great experience. Clean and comfortable clinic.”</p>
+        <p><strong>– Arjun R.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <a
+    class="whatsapp-button"
+    href="https://wa.me/919876543210?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment."
+    target="_blank"
+  >
+    <i class="fab fa-whatsapp"></i> Book Appointment on WhatsApp
+  </a>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> 123 Clinic Road, Your City</p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Email:</strong> contact@yourclinic.com</p>
+    <iframe
+      src="https://maps.google.com/maps?q=delhi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Clinic Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
